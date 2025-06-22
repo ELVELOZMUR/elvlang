@@ -27,5 +27,10 @@
       "scopeName": "source.lang",
       "path": "./syntaxes/lang.tmLanguage.json"
     }]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ELVELOZMUR/elvlang.git"
+  },
+  "license":"MIT"
 }
