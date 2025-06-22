@@ -32,19 +32,19 @@
 			"patterns": [
 				{
 					"name": "variable.name",
-					"match": "[a-zA-Z0-9\\s_]+:"
+					"match": "[a-zA-Z0-9\\s_ñÑ-]+:"
 				},
 				{
 					"name": "variable.name",
-					"match": "[a-zA-Z0-9\\s_]+="
+					"match": "[a-zA-Z0-9\\s_ñÑ-]+="
 				},
 				{
 					"name": "keyword.control",
-					"match": ":[a-zA-Z0-9\\s_]+"
+					"match": ":[a-zA-Z0-9\\s_ñÑ-]+"
 				},
 				{
 					"name": "keyword.control",
-					"match": "=[a-zA-Z0-9\\s_]+"
+					"match": "=[a-zA-Z0-9\\s_ñÑ-]+"
 				},
 				{
 					"name": "constant.character.escape",
