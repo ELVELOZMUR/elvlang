@@ -1,0 +1,31 @@
+{
+  "name": "elvlang",
+  "displayName": "ElvLang syntax highlightning",
+  "description": "This is just an extension I did for my own lang files to make them prettier :3!!",
+  "version": "1.0.0",
+  "publisher": "ms-elvelozmur",
+  "engines": {
+    "vscode": "^1.101.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Linters"
+  ],
+  "keywords": [
+    "lang",
+    "language"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "lang",
+      "aliases": ["Language File", "lang"],
+      "extensions": [".lang"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "lang",
+      "scopeName": "source.lang",
+      "path": "./syntaxes/lang.tmLanguage.json"
+    }]
+  }
+}

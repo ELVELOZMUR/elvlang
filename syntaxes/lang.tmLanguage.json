@@ -1,0 +1,82 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Language File",
+	"patterns": [
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#reg"
+		}
+	],
+	"repository": {
+		"strings": {
+			"name": "string.quoted.double.lang",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.lang",
+					"match": "\\\\."
+				}
+			]
+		},
+		"variables": {
+			"name": "variable.name",
+			"patterns": [
+				{
+					"name": "variable.name",
+					"match": "[a-zA-Z0-9\\s_]+:"
+				},
+				{
+					"name": "variable.name",
+					"match": "[a-zA-Z0-9\\s_]+="
+				},
+				{
+					"name": "keyword.control",
+					"match": ":[a-zA-Z0-9\\s_]+"
+				},
+				{
+					"name": "keyword.control",
+					"match": "=[a-zA-Z0-9\\s_]+"
+				},
+				{
+					"name": "constant.character.escape",
+					"match": "\\\\n"
+				}
+			]
+		},
+		"comments": {
+			"name": "comment",
+			"patterns": [
+				{
+					"name": "comment",
+					"begin": "--",
+					"end": "\n"
+				},
+				{
+					"name": "comment",
+					"begin": "//",
+					"end": "\n"
+				}
+			]
+		},
+		"reg": {
+			"name": "string.regexp",
+			"patterns": [
+				{
+					"name": "string.regexp",
+					"begin": "<",
+					"end": ">"
+				}
+			]
+		}
+	},
+	"scopeName": "source.lang"
+}
